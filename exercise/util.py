@@ -16,7 +16,7 @@ def str_select_input():
 def single_select(correct_pair, in_corrects):
     print("%s" % (correct_pair[0]))
     i = 0
-    k = random.randint(0, len(in_corrects))
+    k = random.randint(0, len(in_corrects)-1)
     for incorrect in in_corrects:
         no = chr(ord('a') + i)
         if i == k:

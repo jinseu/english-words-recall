@@ -15,6 +15,6 @@ def load_words(filename):
             comment = row.get('备注', '')
             comments = comment.split(';')
             if len(row['含义']) == 0:
-                raise Exception('word is not correct', row)
+                continue
             res.append(Word(row['单词'], row['含义'], labels, comments))
     return res
